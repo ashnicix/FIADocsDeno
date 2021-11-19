@@ -1,4 +1,9 @@
 # FIA Docs Deno
+
+[![🐧 Linux](https://github.com/MarkusTheOrt/FIADocsDeno/actions/workflows/linux.yml/badge.svg)](https://github.com/MarkusTheOrt/FIADocsDeno/actions/workflows/linux.yml)
+[![🍎 Mac](https://github.com/MarkusTheOrt/FIADocsDeno/actions/workflows/mac.yml/badge.svg)](https://github.com/MarkusTheOrt/FIADocsDeno/actions/workflows/mac.yml)
+[![🪟 Windows](https://github.com/MarkusTheOrt/FIADocsDeno/actions/workflows/windows.yml/badge.svg)](https://github.com/MarkusTheOrt/FIADocsDeno/actions/workflows/windows.yml)
+
 FIA Docs Deno is a [Discord Webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) *Bot* that posts new [Documents](https://www.fia.com/documents) from the [FIA](https://www.fia.com/).
 
 ![Preview Image](https://i.imgur.com/TIbLZ1e.png "Preview Image")
