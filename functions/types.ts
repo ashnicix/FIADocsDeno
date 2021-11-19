@@ -13,7 +13,7 @@ export type embed = {
     title: string,
     url: string,
     thumbnail: {
-        url: string
+        url?: string
     },
     description: string,
     footer: {

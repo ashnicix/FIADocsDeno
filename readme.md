@@ -9,9 +9,9 @@ Inside the folder create a file called `config.json` with the following contents
 ```
 {
     "webhooks": [ "URL_TO_WEBHOOK" ],
-    "thumbnail": "https://static.ort.dev/fiadontsueme/fia_logo.png"
 }
 ```
+You can additionally set a custom thumbnail by adding a key `thumbnail` with the URL of your thumbnail to the `config.json` file.
 
 This bot supports multiple webhooks for multiple servers. You can use the thumbnail url above or use your own for customization.
 
