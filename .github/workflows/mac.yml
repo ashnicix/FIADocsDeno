@@ -1,0 +1,26 @@
+name: 🍎 Mac
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: mac-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Run linter
+        run: deno lint
+
+      - name: Compile
+        run: deno compile --allow-net=www.fia.com,discordapp.com --allow-read=./ ./index.ts
