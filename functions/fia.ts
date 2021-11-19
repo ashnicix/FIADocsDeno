@@ -68,7 +68,7 @@ const newEmbed = ({title, date, event, url}: element):embed => {
         title:title,
         url: url,
         thumbnail: {
-          url: 'https://static.ort.dev/fiadontsueme/fia_logo.png'
+          url: Config.get().thumbnail ? Config.get().thumbnail : "https://static.ort.dev/fiadontsueme/fia_logo.png"
         },
         description: '',
         footer: {
