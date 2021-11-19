@@ -1,0 +1,1 @@
+deno run --allow-net=www.fia.com,discordapp.com --allow-read=./ ./index.ts
