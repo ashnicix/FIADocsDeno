@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  test:
+  compile:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,3 +24,9 @@ jobs:
 
       - name: Compile
         run: deno compile --allow-net=www.fia.com,discordapp.com --allow-read=./ ./index.ts
+
+      - name: Upload Binary
+        uses: actions/upload-artifact@v2
+        with:
+          name: Binary
+          path: ./FIADocsDeno
