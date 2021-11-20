@@ -1,9 +1,11 @@
 import send from './functions/fia.ts'
+import Config from './functions/config.ts'
 
-// Execute on first-start immediately
-await send();
+const interval = Config.get().interval ?? 60;
 
-await setInterval(async() => {
+// run indefinitely.
+while(true) {
     await send();
-}, 60 * 1000);
-
+    // Wait for one Interval
+    await new Promise(resolve => setTimeout(resolve, interval * 1000));
+}

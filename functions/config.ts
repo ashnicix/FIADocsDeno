@@ -1,7 +1,8 @@
 const configPath = Deno.realPathSync("./config.json")
 type config = {
     webhooks: string[],
-    thumbnail?: string
+    thumbnail?: string,
+    interval?: number
 }
 
 // Little wrapper for reading config.json
