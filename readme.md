@@ -16,7 +16,11 @@ Inside the folder create a file called `config.json` with the following contents
     "webhooks": [ "URL_TO_WEBHOOK" ],
 }
 ```
-You can additionally set a custom thumbnail by adding a key `thumbnail` with the URL of your thumbnail to the `config.json` file.
+Additional Settings
+-
+
+- `thumbnail` - URL to the image being shown in the Embed
+- `interval` - Fetch interval in seconds (default to 60)
 
 This bot supports multiple webhooks for multiple servers. You can use the thumbnail url above or use your own for customization.
 
