@@ -23,7 +23,7 @@ jobs:
         run: deno lint
 
       - name: Compile
-        run: deno compile --allow-net=www.fia.com,discordapp.com --allow-read=./ ./index.ts
+        run: deno compile --allow-net=www.fia.com,discordapp.com,discord.com --allow-read=./ ./index.ts
 
       - name: Upload Binary
         uses: actions/upload-artifact@v2
